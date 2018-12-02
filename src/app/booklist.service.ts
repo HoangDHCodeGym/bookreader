@@ -16,8 +16,6 @@ export class BooklistService {
   }
 
   getBooks(): Observable<Book[]> {
-    console.log('Fetching books');
-    console.log(this.http.get<Book[]>(this.bookUrl));
     return this.http.get<Book[]>(this.bookUrl);
   }
 

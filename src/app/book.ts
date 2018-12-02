@@ -1,5 +1,5 @@
 export class Book {
   id: number;
   name: string;
-  read: boolean;
+  public read: boolean;
 }

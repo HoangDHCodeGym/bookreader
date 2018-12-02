@@ -7,12 +7,14 @@ import { ArchiveComponent } from './archive/archive.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { MainpageComponent } from './mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReadingListComponent,
-    ArchiveComponent
+    ArchiveComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,
