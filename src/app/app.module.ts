@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ReadingListComponent } from './reading-list/reading-list.component';
 import { ArchiveComponent } from './archive/archive.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
